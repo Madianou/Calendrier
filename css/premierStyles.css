@@ -1,0 +1,21 @@
+.root{
+ -fx-padding:15;
+}
+
+.label{
+ -fx-font-size: 1.5em;
+
+}
+
+#titre{
+ -fx-font-weight: bold;
+}
+
+#today {
+ -fx-text-fill: red;
+}
+
+.scroll-pane{
+ -fx-background: #ddf5ee;
+ -fx-border-color: #5F9EA0;
+}
