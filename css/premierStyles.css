@@ -9,6 +9,8 @@
 
 #titre{
  -fx-font-weight: bold;
+ -fx-background-image: url("Chrysanthemum.jpg");
+
 }
 
 #today {
@@ -18,7 +20,4 @@
 .scroll-pane{
  -fx-background: #ddf5ee;
  -fx-border-color: #5F9EA0;
-}
-#test{
--fx-background-image: url("Chrysanthemum.jpg");
 }

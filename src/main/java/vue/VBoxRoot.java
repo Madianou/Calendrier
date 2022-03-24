@@ -1,17 +1,12 @@
 package vue;
 
 import javafx.geometry.Insets;
-import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.layout.*;
 import modele.CalendrierDuMois;
 import modele.ConstantesCalendrier;
-import modele.Date;
 import modele.DateCalendrier;
-
-import java.util.Calendar;
-import java.util.Collection;
 
 public class VBoxRoot extends VBox
         implements ConstantesCalendrier {
@@ -39,5 +34,12 @@ public class VBoxRoot extends VBox
             }
         }
         this.getChildren().addAll(labelTitle,scrollPaneDates);
+    }
+
+    public static interface ConstantesCalendrier {
+
+        final String [] JOURS_SEMAINE = {"lundi","mardi","mercredi","jeudi","vendredi","samedi","dimanche"};
+
+        final String [] MOIS = {"janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"};
     }
 }
