@@ -11,7 +11,8 @@ import java.io.File;
 public class GraphiqueDate extends Application {
 
     public void start(Stage stage) {
-        VBox root = new VBoxRoot();
+        //VBox root = new VBoxRoot();
+        VBox root = new VBoxRootAllMonths();
         Scene scene = new Scene(root, 550, 550);
         File [] fichierCss = new File("css").listFiles();
         for (File fichier : fichierCss){

@@ -37,7 +37,6 @@ public class VBoxRoot extends VBox
                 VBox.setMargin(tempLabel, new Insets(4));
                 boiteDates.getChildren().add(tempLabel);
             }
-
         }
         this.getChildren().addAll(labelTitle,scrollPaneDates);
     }
