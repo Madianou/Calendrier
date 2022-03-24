@@ -12,11 +12,13 @@ public class GraphiqueDate extends Application {
 
     public void start(Stage stage) {
         VBox root = new VBoxRoot();
-        Scene scene = new Scene(root, 700, 550);
+        Scene scene = new Scene(root, 550, 550);
+        File [] fichierCss = new File("css").listFiles();
+        for (File fichier : fichierCss){
+            scene.getStylesheets().add(fichier.toURI().toString());
+        }
         stage.setScene(scene);
-        stage.setTitle("Hello JavaFX");
-        File css = new File("tp2_partie2/css"+File.separator+"premierStyles.css");
-        scene.getStylesheets().add(css.toURI().toString());
+        stage.setTitle("Calendrier");
         stage.show();
 
     }
