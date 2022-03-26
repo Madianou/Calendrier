@@ -1,5 +1,6 @@
 .root{
  -fx-padding:15;
+  -fx-background: black;
 }
 
 .label{
@@ -9,15 +10,24 @@
 
 #titre{
  -fx-font-weight: bold;
- -fx-background-image: url("Chrysanthemum.jpg");
+ -fx-background-image: url("fondTitle.png");
 
 }
 
 #today {
- -fx-text-fill: red;
+    -fx-text-fill: white;
+  -fx-background-image: url("today.png");
 }
 
-.scroll-pane{
- -fx-background: #ddf5ee;
- -fx-border-color: #5F9EA0;
+
+#calendrier{
+ -fx-background-image: url("grenouille.jpg");
+}
+
+#HorsMois{
+-fx-text-fill: grey;
+}
+
+#jours{
+-fx-text-fill: white;
 }

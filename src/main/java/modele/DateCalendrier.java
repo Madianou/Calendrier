@@ -40,6 +40,8 @@ public class DateCalendrier extends Date
         return chJourSemaine;
     }
 
+    public int getJour(){ return chJour; }
+
     public int getMois(){ return chMois;}
 
     public Integer getNumeroSemaine(Date parDate){
